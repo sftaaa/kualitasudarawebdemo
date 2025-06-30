@@ -26,41 +26,37 @@ def pie_plot(category='', catg_type='', catg_aqi='', aqi_label='', title='', col
 
 
 def observations():
-    with st.expander("OBSERVATIONS 🧐"):
+    with st.expander("OBSERVASI"):
         st.write(":blue[*Carbon Monoxide*]")
         st.write('''
-            - None of the countries has their locations marked as belonging to one of the risky categories.
-            - With a :green[**Good**] performance in all the countries, only the United States holds a
-              bit larger percentage for the :orange[**Unhealthy for Sensitive Groups category.**]
+            - Tidak ada negara yang lokasinya tergolong dalam kategori berisiko.
+            - Dengan kinerja :green[**Good**] di semua negara, hanya Amerika Serikat yang memiliki
+              Sedikit persentase lebih besar dalam :orange[**Unhealthy for Sensitive Groups category.**]
             ''')
     
         st.divider()
         st.write(":blue[*Ozone*]")
         st.write('''
-            - China demonstrated the worst conditions showing less than 40 percent; of the areas here
-              are labeled from :orange[**Unhealthy for Sensitive Groups to Very Unhealthy**]. 
-            - At the same time, more than 60 percent of the areas were described as within normal limits
-              :green[**(Good to Moderate)**], so the situation is not so dramatic compared to the "Indian AQI".
-            - Speaking of India, within this category, over 70 percent have :green[**Good O3**] conditions.
+            - China menunjukkan kondisi terburuk dengan kurang dari 40 persen wilayah yang dikategorikan dari :orange[**Unhealthy for Sensitive Groups to Very Unhealthy**]. 
+            - Di saat yang sama, lebih dari 60 persen wilayah digambarkan masih dalam batas normal
+              :green[**(Good to Moderate)**], sehingga situasinya tidak terlalu dramatis dibandingkan dengan "Indian AQI".
+            - Berbicara tentang India, dalam kategori ini, lebih dari 70 persen wilayah memiliki kondisi :green[**Good O3**].
             ''')
     
         st.divider()
         st.write(':blue[*Nitrogen Dioxide*]')
         st.write('''
-            - Relatively worse conditions with less :green[**Good NO2 levels (between 47 - 49)**] can be found
-              in countries such as Indonesia, China, United States, and Brazil.
-            - A minor percentage of :green[**Moderate NO2**] levels can be found in areas of the United States.
+            - Kondisi yang relatif lebih buruk dengan tingkat :green[**Good NO2 levels (between 47 - 49)**] dapat ditemukan di
+              negara-negara seperti Indonesia, Tiongkok, Amerika Serikat, dan Brasil.
+            - Persentase kecil tingkat :green[**Moderate NO2**] dapat ditemukan di beberapa wilayah Amerika Serikat.
             ''')
     
         st.divider()
         st.write(':blue[*Atmospheric Particulate Matter*]')
         st.write('''
-            - The worst conditions can be found in India, China, Indonesia, Mexico, and Pakistan where
-              most of their areas are marked from :orange[**Unhealthy for Sensitive Groups to Very Unhealthy**]
-              categories.
-            - A very small percentage of areas have :green[**Moderate PM2.5**] levels for the above-mentioned
-              countries.
-            - Countries such as India, South Africa, Russia, Pakistan, and South Korea are marked with
-              high PM2.5 levels for the :red[**Hazardous**] category. This warns the public to avoid all outdoor
-              physical activities.
+            - Kondisi terburuk dapat ditemukan di India, Tiongkok, Indonesia, Meksiko, dan Pakistan,
+              di mana sebagian besar wilayahnya dikategorikan dalam :orange[**Unhealthy for Sensitive Groups to Very Unhealthy**]
+            - Persentase yang sangat kecil dari wilayah di negara-negara tersebut memiliki tingkat :green[**Moderate PM2.5**] yang telah disebutkan sebelumnya
+            - Negara-negara seperti India, Afrika Selatan, Rusia, Pakistan, dan Korea
+              Selatan tercatat memiliki tingkat PM2.5 yang tinggi dalam kategori :red[**Hazardous**]. TSelatan tercatat memiliki tingkat PM2.5 yang tinggi dalam kategori
             ''')
