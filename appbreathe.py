@@ -38,13 +38,12 @@ st.sidebar.markdown("""
 # Finishing up with info panels 
 st.sidebar.header("Resources ✨")
 st.sidebar.info(
-    """The raw data dari [Kaggle](https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset) dan
-    originally scrapped [here](https://www.elichens.com/)!"""
+    """raw data dari [Kaggle](https://www.kaggle.com/datasets/hasibalmuzdadid/global-air-pollution-dataset)!"""
     )
 
 st.sidebar.info(
     """
-    Image icon is from [here](https://icons8.com/icon/BIlYIKuOI6sm/air-pollution)
+    icon idari [sini](https://icons8.com/icon/BIlYIKuOI6sm/air-pollution)
     """
     )
 
