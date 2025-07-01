@@ -59,7 +59,7 @@ with c1:
 
 with c2:
     st.title("Pengecekan Kualitas Udara")
-    st.markdown("*Visualizing Global Air Pollution Levels*")
+    st.markdown("*Visualisasi Tingkat Kualitas Udara Global*")
 
 # =========================
 # Load the data
@@ -194,9 +194,9 @@ def plot_bar(coc='', aqi=''):
     st.pyplot(sns_fig)
 
 st.divider()
-st.subheader('Maximum Values from 8 Countries📊')
+st.subheader('Nilai Maksimum dari 8 Negara📊')
 
-choose_coc = st.selectbox('Select a Country Code 👇',
+choose_coc = st.selectbox('Pilih Kode Negara 👇',
     ('USA', 'IND', 'CHN', 'MYS', 'IDN', 'ZAF', 'RUS', 'BRA'))
 
 st.success("""📌 USA: United States, IND: India, CHN: China,
@@ -206,11 +206,11 @@ st.success("""📌 USA: United States, IND: India, CHN: China,
 col1, col2 = st.columns(2, gap='medium')
 
 with col1:
-    st.markdown(':blue[Top 15 Cities with max values of **CO**]')
+    st.markdown(':blue[15 Kota Teratas dengan Nilai Maksimum **CO**]')
     plot_bar(coc=choose_coc, aqi='co_aqi_value')
 
 with col2:
-    st.markdown('Top 15 Cities with max values of **O3**')
+    st.markdown('15 Kota Teratas dengan Nilai Maksimum **O3**')
     plot_bar(coc=choose_coc, aqi='ozone_aqi_value')
 
 
@@ -218,8 +218,8 @@ col3, col4 = st.columns(2, gap='medium')
 
 with col3:
     plot_bar(coc=choose_coc, aqi='no2_aqi_value')
-    st.markdown('Top 15 Cities with max values of **NO2**')
+    st.markdown('15 Kota Teratas dengan Nilai Maksimum **NO2**')
 
 with col4:
     plot_bar(coc=choose_coc, aqi='pm2_5_aqi_value')
-    st.markdown(':blue[Top 15 Cities with max values of **PM2.5**]')
+    st.markdown(':blue[15 Kota Teratas dengan Nilai Maksimum **PM2.5**]')
